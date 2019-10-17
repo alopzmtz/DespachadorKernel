@@ -36,8 +36,8 @@ public class Proceso {
 
 	private double calculateQuantumTime() {
 
-		double tempNumber1 = Math.ceil(execTime/quantumTime);
-		double tempNumber = (tempNumber1 * changeOfQuantumTime) - changeOfQuantumTime;
+		double tempNumber1 = (execTime/quantumTime);
+		double tempNumber = (tempNumber1 * changeOfQuantumTime);
 
 		return tempNumber;
 	}

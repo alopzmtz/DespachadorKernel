@@ -61,7 +61,9 @@ public class Main extends JFrame{
 
 	private class SimulationListener implements ActionListener{
 		public void actionPerformed(ActionEvent e){
-			errorMsg.setText("Whoo button was pressed yay!");
+			//Validación de campos de texto
+			//Creación de lista de procesos
+			Kernel dispatcher = new Kernel()
 		}
 	}
 
