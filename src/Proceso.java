@@ -4,6 +4,7 @@ import java.lang.Math;
 public class Proceso {
 
     ////Variables del Proceso
+    private String processID;
 
     // T.E.
     private int execTime;
@@ -27,7 +28,8 @@ public class Proceso {
     // T.F.
     private int totalTime;
 
-    public Proceso(int changeOfContextTime, int quantumTime, int blockTime, int changeOfQuantumTime, int execTime, int totalBlocks, int creationTime) {
+    public Proceso(String processID, int changeOfContextTime, int quantumTime, int blockTime, int changeOfQuantumTime, int execTime, int totalBlocks, int creationTime) {
+        this.processID = processID;
         this.changeOfContextTime = changeOfContextTime;
     	this.quantumTime = quantumTime;
         this.blockTime = blockTime;
@@ -62,5 +64,9 @@ public class Proceso {
 
     public int getCreationTime() {
         return creationTime;
+    }
+
+    public String getProcessName(){
+        return processID;
     }
 }

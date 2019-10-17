@@ -39,7 +39,7 @@ public class Main extends JFrame{
 		inputC.setBounds(35,345, 200, 70);
 		inputD = new JLabel("Tiempo de Bloqueo:");
 		inputD.setBounds(35,425, 200, 70);
-		errorMsg = new JLabel("IT'S THE FINAL COUNTDOWN");
+		errorMsg = new JLabel("PLACEHOLDER TEXT");
 		errorMsg.setBounds(120, 620, 300, 50);
 		errorMsg.setFont(new Font("Calibri", Font.BOLD, 20));
 		microNumTF = new JTextField();
@@ -61,10 +61,18 @@ public class Main extends JFrame{
 
 	private class SimulationListener implements ActionListener{
 		public void actionPerformed(ActionEvent e){
-			//Validación de campos de texto
-			//Creación de lista de procesos
-			Kernel dispatcher = new Kernel()
+			//Validación de campos de texto FALTA
+			//Creación de lista de procesos FALTA es puro hardcodeo facil
+			LinkedList<Proceso> inProcesses = new LinkedList<Proceso>();
+			setupList(inProcesses);
+			//Creación del kernel
+			Kernel dispatcher = new Kernel(inProcesses, Integer.parseInt(inputA.getText()), Integer.parseInt(inputB.getText()), Integer.parseInt(inputC.getText()), Integer.parseInt(inputD.getText()));
+			//Falta mostrar tablas tras el trabajo del dispatcher
 		}
+	}
+
+	private void setupList(LinkedList<Proceso> processList){
+		processList.add(new Process());//Falta llenar los procesos
 	}
 
 	public static void main(String[] args) {
