@@ -4,8 +4,14 @@ import java.lang.Math;
 public class Proceso {
 
 	////Variables del Proceso
+
+	// T.E.
 	private double execTime;
+
+	// Number of times the process should block
 	private double totalBlocks;
+
+	// T.I.
 	private double creationTime;
 
 	//Variables del sistema
@@ -14,7 +20,9 @@ public class Proceso {
 	private double changeOfQuantumTime;
 
 	//Variables resultantes de la lógica
-	private double tempTime;
+
+	// T.F.
+	private double totalTime;
 
 	public Proceso(double quantumTime, double blockTime, double changeOfQuantumTime, double execTime, double totalBlocks, double creationTime) {
 		this.quantumTime = quantumTime;
@@ -23,32 +31,31 @@ public class Proceso {
 		this.execTime = execTime;
 		this.totalBlocks = totalBlocks;
 		this.creationTime = creationTime;
-
-		tempTime = calculateTime();
-
+		totalTime = calculateTime();
 	}
 
+	// T.B.
 	private double calculateBlocks() {
-
-		double totalBlockTime = blockTime * totalBlocks;
-		return totalBlockTime;
+		return blockTime * totalBlocks;
 	}
 
+	// T.V.C.
 	private double calculateQuantumTime() {
 
 		double tempNumber1 = Math.ceil(execTime/quantumTime);
-		double tempNumber = (tempNumber1 * changeOfQuantumTime) - changeOfQuantumTime;
 
-		return tempNumber;
+		return (tempNumber1 * changeOfQuantumTime) - changeOfQuantumTime;
 	}
 
 	private double calculateTime() {
-		double tempTime1 = execTime + calculateQuantumTime() + calculateBlocks();
-		return tempTime1;
+		return execTime + calculateQuantumTime() + calculateBlocks();
 	}
 
-	public double getTime() {
-		return tempTime;
+	public double getTotalTime() {
+		return totalTime;
 	}
 
+	public double getCreationTime() {
+		return creationTime;
+	}
 }
