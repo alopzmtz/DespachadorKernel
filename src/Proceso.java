@@ -3,59 +3,64 @@ import java.lang.Math;
 
 public class Proceso {
 
-	////Variables del Proceso
+    ////Variables del Proceso
 
-	// T.E.
-	private double execTime;
+    // T.E.
+    private int execTime;
 
-	// Number of times the process should block
-	private double totalBlocks;
+    // Number of times the process should block
+    private int totalBlocks;
 
-	// T.I.
-	private double creationTime;
+    // T.I.
+    private int creationTime;
 
-	//Variables del sistema
-	private double quantumTime;
-	private double blockTime;
-	private double changeOfQuantumTime;
+    // T.C.C
+	private int changeOfContextTime;
 
-	//Variables resultantes de la lógica
+    //Variables del sistema
+    private int quantumTime;
+    private int blockTime;
+    private int changeOfQuantumTime;
 
-	// T.F.
-	private double totalTime;
+    //Variables resultantes de la lógica
 
-	public Proceso(double quantumTime, double blockTime, double changeOfQuantumTime, double execTime, double totalBlocks, double creationTime) {
-		this.quantumTime = quantumTime;
-		this.blockTime = blockTime;
-		this.changeOfQuantumTime = changeOfQuantumTime;
-		this.execTime = execTime;
-		this.totalBlocks = totalBlocks;
-		this.creationTime = creationTime;
-		totalTime = calculateTime();
+    // T.F.
+    private int totalTime;
+
+    public Proceso(int changeOfContextTime, int quantumTime, int blockTime, int changeOfQuantumTime, int execTime, int totalBlocks, int creationTime) {
+        this.changeOfContextTime = changeOfContextTime;
+    	this.quantumTime = quantumTime;
+        this.blockTime = blockTime;
+        this.changeOfQuantumTime = changeOfQuantumTime;
+        this.execTime = execTime;
+        this.totalBlocks = totalBlocks;
+        this.creationTime = creationTime;
+        totalTime = calculateTime();
+    }
+
+    // T.B.
+    private int calculateBlocks() {
+        return blockTime * totalBlocks;
+    }
+
+    // T.V.C.
+    private int calculateQuantumTime() {
+        return ((execTime / quantumTime) * changeOfQuantumTime);
+    }
+
+    private int calculateTime() {
+        return changeOfContextTime + execTime + calculateQuantumTime() + calculateBlocks();
+    }
+
+    public int getTotalTime() {
+        return totalTime;
+    }
+
+    public int getFinalTime() {
+    	return totalTime + creationTime;
 	}
 
-	// T.B.
-	private double calculateBlocks() {
-		return blockTime * totalBlocks;
-	}
-
-	// T.V.C.
-	private double calculateQuantumTime() {
-
-		double tempNumber1 = Math.ceil(execTime/quantumTime);
-
-		return (tempNumber1 * changeOfQuantumTime) - changeOfQuantumTime;
-	}
-
-	private double calculateTime() {
-		return execTime + calculateQuantumTime() + calculateBlocks();
-	}
-
-	public double getTotalTime() {
-		return totalTime;
-	}
-
-	public double getCreationTime() {
-		return creationTime;
-	}
+    public int getCreationTime() {
+        return creationTime;
+    }
 }
