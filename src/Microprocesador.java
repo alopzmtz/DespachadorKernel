@@ -55,7 +55,7 @@ public class Microprocesador{
     //adds a process to the list and updates the final time
     public void addProcess(Proceso process, int tCC){
         processes.add(process);
-        this.time = time + process.getTime();
+        this.time = time + process.getTotalTime();
         if(startState == false){
             this.time +=10;
         }
