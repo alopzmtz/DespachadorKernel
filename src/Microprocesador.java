@@ -59,7 +59,9 @@ public class Microprocesador{
         if(startState == false){
             this.time +=10;
         }
-        
+        else{
+            startState = false;
+        }
 
     }
 }
