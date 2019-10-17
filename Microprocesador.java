@@ -1,18 +1,19 @@
 import java.util.*;
 
-public class Microprocessor{
+public class Microprocesador{
 
     private int id;
     private boolean startState;
-    private List<Process> processes = new ArrayList<Process>();
-    private int time;
+    private List<Proceso> processes; 
+    private double time;
 
 
-    public Microprocessor(int id){
+    public Microprocesador(int id){
 
         this.startState = true;
         this.time = 0;
         this.id = id;
+        this.processes = new ArrayList<Proceso>();
 
     }
 
@@ -25,11 +26,11 @@ public class Microprocessor{
         return startState;
     }
 
-    public List<Process> getProcesses(){
+    public List<Proceso> getProcesses(){
         return processes;
     }
 
-    public int getTime(){
+    public double getTime(){
         return time;
     }
 
@@ -43,20 +44,22 @@ public class Microprocessor{
         this.startState = startState;
     }
 
-    public void setProcesses(List<Process> processes){
+    public void setProcesses(List<Proceso> processes){
         this.processes = processes;
     }
 
-    public void setTime(int time){
+    public void setTime(double time){
         this.time = time;
     }
 
     //adds a process to the list and updates the final time
-    public void addProcess(Process process, int tCC){
+    public void addProcess(Proceso process, int tCC){
         processes.add(process);
-        this.time = time + process.getTotalTime();
-        if(!state){
+        this.time = time + process.getTime();
+        if(startState == false){
             this.time +=10;
         }
+        
+
     }
 }
