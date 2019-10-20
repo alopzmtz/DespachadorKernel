@@ -2,7 +2,7 @@ import java.util.List;
 
 public class Kernel {
 
-    public Kernel(LinkedList<Proceso> procesos, int microsNumber, int quantum, int contextChangeTime, int blockingTime) {
+    public Kernel(List<Process> processes, int microsNumber, int quantum, int contextChangeTime, int lockTime) {
 
     }
 
