@@ -4,6 +4,7 @@ public class Microprocessor {
 
     private int mId;
     private List<Process> mProcesses;
+    private int mUsedTime;
 
     public Microprocessor(int id) {
         mId = id;
@@ -24,5 +25,13 @@ public class Microprocessor {
 
     public void setProcesses(List<Process> processes) {
         mProcesses = processes;
+    }
+
+    public int getUsedTime() {
+        return mUsedTime;
+    }
+
+    public void setUsedTime(int currentTime) {
+        mUsedTime = currentTime;
     }
 }

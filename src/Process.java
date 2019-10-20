@@ -7,11 +7,23 @@ public class Process {
     private int mTVC;
     private int mChangeOfContextTime;
     private int mInitialTime;
+    private int mMinimumStartTime;
+    private boolean mIsHole;
 
-    public Process(String processId, int executionTime, int locksNumber) {
+    public Process(String processId, int executionTime, int locksNumber, int minimumStartTime) {
         mProcessId = processId;
         mExecutionTime = executionTime;
         mLocksNumber = locksNumber;
+        mMinimumStartTime = minimumStartTime;
+        mIsHole = false;
+    }
+
+    // Applies for a hole
+    public Process(int executionTime, int initialTime) {
+        mProcessId = "Hueco";
+        mExecutionTime = executionTime;
+        mIsHole = true;
+        mInitialTime = initialTime;
     }
 
     // T.B.
@@ -63,6 +75,10 @@ public class Process {
     // T.F.
     public int getFinalTime() {
         return getTotalTime() + mInitialTime;
+    }
+
+    public boolean isIsHole() {
+        return mIsHole;
     }
 
 //    // T.V.C.
