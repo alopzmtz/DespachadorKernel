@@ -34,4 +34,23 @@ public class Microprocessor {
     public void setUsedTime(int currentTime) {
         mUsedTime = currentTime;
     }
+
+    public void addProcess(Process process) {
+        // Update used time
+        mUsedTime = process.getFinalTime();
+        // Add process to the list
+        mProcesses.add(process);
+    }
+
+    public void removeProcess(Process process) {
+        mUsedTime = process.getInitialTime();
+        mProcesses.remove(process);
+    }
+
+    @Override
+    public String toString() {
+        return "Micro Id = " + mId
+                + " Used Time = " + mUsedTime
+                + " Processes = " + mProcesses;
+    }
 }

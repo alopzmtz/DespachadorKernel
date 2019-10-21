@@ -46,6 +46,11 @@ public class Main extends JFrame {
                         lockTime
                 );
 
+                // Process the kernel
+                kernel.process();
+
+                // The micros will now contain the processes
+                System.out.println(kernel.getMicroprocessors());
             } catch (NumberFormatException e) {
                 System.out.println(e.getMessage());
                 System.exit(1);

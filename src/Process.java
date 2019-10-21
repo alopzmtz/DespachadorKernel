@@ -8,21 +8,21 @@ public class Process {
     private int mChangeOfContextTime;
     private int mInitialTime;
     private int mMinimumStartTime;
-    private boolean mIsHole;
+    private boolean mHole;
 
     public Process(String processId, int executionTime, int locksNumber, int minimumStartTime) {
         mProcessId = processId;
         mExecutionTime = executionTime;
         mLocksNumber = locksNumber;
         mMinimumStartTime = minimumStartTime;
-        mIsHole = false;
+        mHole = false;
     }
 
     // Applies for a hole
     public Process(int executionTime, int initialTime) {
         mProcessId = "Hueco";
         mExecutionTime = executionTime;
-        mIsHole = true;
+        mHole = true;
         mInitialTime = initialTime;
     }
 
@@ -77,14 +77,31 @@ public class Process {
         return getTotalTime() + mInitialTime;
     }
 
-    public boolean isIsHole() {
-        return mIsHole;
+    public boolean isHole() {
+        return mHole;
     }
 
-//    // T.V.C.
-//    private int calculateQuantumTime() {
-//        return ((execTime / quantumTime) * changeOfQuantumTime);
-//    }
-//
+    public int getLocksNumber() {
+        return mLocksNumber;
+    }
 
+    public int getMinimumStartTime() {
+        return mMinimumStartTime;
+    }
+
+    public String getProcessId() {
+        return mProcessId;
+    }
+
+    @Override
+    public String toString() {
+        return "Process Id = " + mProcessId
+                + " Change of Context Time (T.C.C.) = " + mChangeOfContextTime
+                + " Execution Time (T.E.) = " + mExecutionTime
+                + " T.V.C = " + mTVC
+                + " Lock Time (T.B.) = " + mLockTime
+                + " Total Time (T.T.) = " + getTotalTime()
+                + " Initial Time (T.I.) = " + mInitialTime
+                + " Final Time (T.F.) = " + getFinalTime();
+    }
 }
