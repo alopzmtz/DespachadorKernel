@@ -51,9 +51,18 @@ public class Kernel {
     private void assignProcessToMicro(Process current) {
         // The micro that will contain the process
         Microprocessor leastUsed = mMicroprocessors.get(getMinUsedTimeMicroIndex());
+
         // Check if we need holes
         if (belowThreshold(leastUsed, current.getMinimumStartTime())) {
             fillMicrosWithHole(current.getMinimumStartTime());
+        }
+
+        for (Microprocessor microprocessor: mMicroprocessors) {
+            if (leastUsed.getUsedTime() == microprocessor.getUsedTime() ) {
+                if (leastUsed.getId() > microprocessor.getId() ) {
+                    leastUsed = microprocessor;
+                }
+            }
         }
 
         // Create a copy of the process to be inserted so we don't modify input
