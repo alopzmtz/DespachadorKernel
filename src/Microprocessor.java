@@ -50,7 +50,7 @@ public class Microprocessor {
     @Override
     public String toString() {
         return "Micro Id = " + mId
-                + " Used Time = " + mUsedTime
-                + " Processes = " + mProcesses;
+                + " Processes = " + mProcesses
+                 + " Used Time = " + mUsedTime;
     }
 }

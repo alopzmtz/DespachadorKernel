@@ -5,6 +5,8 @@ import java.awt.event.ActionListener;
 import java.util.Arrays;
 import java.util.List;
 
+
+
 public class Main extends JFrame {
 
     // Hardcoded processes list
@@ -25,7 +27,7 @@ public class Main extends JFrame {
             new Process("K", 100, 2, 4000),
             new Process("M", 80, 2, 4000),
             new Process("P", 800, 4, 4000),
-            new Process("Ñ", 500, 3, 8000)
+            new Process("\u00d1", 500, 3, 8000)
     );
 
     private ActionListener mSimulationStartActionListener = new ActionListener() {
@@ -49,8 +51,14 @@ public class Main extends JFrame {
                 // Process the kernel
                 kernel.process();
 
+                CsvWriter csvw = new CsvWriter();
+                csvw.printMicroprocessors(kernel.getMicroprocessors());
                 // The micros will now contain the processes
-                System.out.println(kernel.getMicroprocessors());
+
+
+
+               
+
             } catch (NumberFormatException e) {
                 System.out.println(e.getMessage());
                 System.exit(1);

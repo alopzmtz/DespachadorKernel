@@ -125,4 +125,8 @@ public class Kernel {
     public List<Microprocessor> getMicroprocessors() {
         return mMicroprocessors;
     }
+
+    public Microprocessor getMicroprocessor(int i) {
+        return mMicroprocessors.get(i);
+    }
 }
