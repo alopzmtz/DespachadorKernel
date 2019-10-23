@@ -74,7 +74,7 @@ public class Main extends JFrame {
     private Main() {
         super();
         JButton simulationStart = new JButton("Simular despachador.");
-        simulationStart.setBounds(150, 535, 200, 50);
+        simulationStart.setBounds(135, 535, 200, 50);
         JLabel titleLabel = new JLabel("Despachador");
         titleLabel.setBounds(150, 30, 200, 60);
         titleLabel.setFont(new Font("Calibri", Font.BOLD, 30));
@@ -99,9 +99,6 @@ public class Main extends JFrame {
         inputC.setBounds(35, 345, 200, 70);
         JLabel inputD = new JLabel("Tiempo de Bloqueo:");
         inputD.setBounds(35, 425, 200, 70);
-        JLabel errorMsg = new JLabel("PLACEHOLDER TEXT");
-        errorMsg.setBounds(120, 620, 300, 50);
-        errorMsg.setFont(new Font("Calibri", Font.BOLD, 20));
         mMicroNumTF = new JTextField();
         mMicroNumTF.setBounds(265, 200, 150, 40);
         mQuantumTimeTF = new JTextField();
@@ -120,14 +117,13 @@ public class Main extends JFrame {
         add(inputB);
         add(inputC);
         add(inputD);
-        add(errorMsg);
         add(mMicroNumTF);
         add(mQuantumTimeTF);
         add(mCcTimeTF);
         add(mLockTimeTF);
         simulationStart.addActionListener(mSimulationStartActionListener);
         getContentPane().setBackground(new Color(211, 240, 219));
-        setSize(500, 750);
+        setSize(500, 675);
         setLayout(null);
         setVisible(true);
     }

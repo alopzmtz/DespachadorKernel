@@ -3,29 +3,530 @@
 Micro Id,0
 
 Process Id,TCC,TE,TVC,TB,TT,TI,TF,
-B,0,300,0,30,330,0,330,
-H,15,700,0,60,775,330,1105,
-Hueco,0,395,0,0,395,1105,1500,
-L,0,3000,0,75,3075,1500,4575,
-G,15,10,0,30,55,4575,4630,
-K,15,100,0,30,145,4630,4775,
-M,15,80,0,30,125,4775,4900,
-P,15,800,0,60,875,4900,5775,
+B,0,300,0,4,304,0,304,
+Hueco,0,1196,0,0,1196,304,1500,
+J,0,300,0,4,304,1500,1804,
+Hueco,0,1196,0,0,1196,1804,3000,
+A,0,400,0,4,404,3000,3404,
+Hueco,0,596,0,0,596,3404,4000,
+K,0,100,0,4,104,4000,4104,
+Hueco,0,3896,0,0,3896,4104,8000,
+Ñ,0,500,0,6,506,8000,8506,
 
 
 Micro Id,1
 
 Process Id,TCC,TE,TVC,TB,TT,TI,TF,
-D,0,100,0,30,130,0,130,
-F,15,500,0,45,560,130,690,
-Hueco,0,810,0,0,810,690,1500,
-J,0,300,0,30,330,1500,1830,
-N,15,50,0,30,95,1830,1925,
-O,15,600,0,45,660,1925,2585,
-Hueco,0,415,0,0,415,2585,3000,
-A,0,400,0,30,430,3000,3430,
-C,15,50,0,30,95,3430,3525,
-E,15,1000,0,75,1090,3525,4615,
-I,15,450,0,45,510,4615,5125,
-Hueco,0,2875,0,0,2875,5125,8000,
-Ñ,0,500,0,45,545,8000,8545,
+D,0,100,0,4,104,0,104,
+Hueco,0,1396,0,0,1396,104,1500,
+L,0,3000,0,10,3010,1500,4510,
+
+
+Micro Id,2
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+F,0,500,0,6,506,0,506,
+Hueco,0,994,0,0,994,506,1500,
+N,0,50,0,4,54,1500,1554,
+Hueco,0,1446,0,0,1446,1554,3000,
+C,0,50,0,4,54,3000,3054,
+Hueco,0,946,0,0,946,3054,4000,
+M,0,80,0,4,84,4000,4084,
+
+
+Micro Id,3
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+H,0,700,0,8,708,0,708,
+Hueco,0,792,0,0,792,708,1500,
+O,0,600,0,6,606,1500,2106,
+Hueco,0,894,0,0,894,2106,3000,
+E,0,1000,0,10,1010,3000,4010,
+
+
+Micro Id,4
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+Hueco,0,1500,0,0,1500,0,1500,
+Hueco,0,1500,0,0,1500,1500,3000,
+G,0,10,0,4,14,3000,3014,
+Hueco,0,986,0,0,986,3014,4000,
+P,0,800,0,8,808,4000,4808,
+
+
+Micro Id,5
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+Hueco,0,1500,0,0,1500,0,1500,
+Hueco,0,1500,0,0,1500,1500,3000,
+I,0,450,0,6,456,3000,3456,
+
+
+Micro Id,6
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,7
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,8
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,9
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,10
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,11
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,12
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,13
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,14
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,15
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,16
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,17
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,18
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,19
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,20
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,21
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,22
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,23
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,24
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,25
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,26
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,27
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,28
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,29
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,30
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,31
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,32
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,33
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,34
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,35
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,36
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,37
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,38
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,39
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,40
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,41
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,42
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,43
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,44
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,45
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,46
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,47
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,48
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,49
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,50
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,51
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,52
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,53
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,54
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,55
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,56
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,57
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,58
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,59
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,60
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,61
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,62
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,63
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,64
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,65
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,66
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,67
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,68
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,69
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,70
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,71
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,72
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,73
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,74
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,75
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,76
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,77
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,78
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,79
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,80
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,81
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,82
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,83
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,84
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,85
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,86
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,87
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,88
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,89
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,90
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,91
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,92
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,93
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,94
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,95
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,96
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,97
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,98
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
+
+
+Micro Id,99
+
+Process Id,TCC,TE,TVC,TB,TT,TI,TF,
